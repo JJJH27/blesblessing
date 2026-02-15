@@ -48,20 +48,34 @@ const ExchangeSection: React.FC<ExchangeSectionProps> = ({ t }) => {
 
         {/* Bottom Image and Label */}
         <div className="flex flex-col items-center justify-center mt-12 gap-6">
-            <div className="relative group transform hover:scale-[1.02] transition-all duration-500">
-                <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
-                <div className="relative rounded-2xl border border-white/10 overflow-hidden shadow-2xl bg-black/50 backdrop-blur-sm p-2">
-                    <img 
-                      src="./blesexchange.png" 
-                      alt="Blessing Exchange Interface" 
-                      className="w-full max-w-4xl h-auto object-cover rounded-xl"
-                    />
+            <a 
+              href="https://blesexchange.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-full max-w-4xl block"
+            >
+                <div className="relative group transform hover:scale-[1.02] transition-all duration-500">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-teal-500 to-blue-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div className="relative rounded-2xl border border-white/10 overflow-hidden shadow-2xl bg-black/50 backdrop-blur-sm p-2">
+                        <img 
+                          src="./blesexchange.png" 
+                          alt="Blessing Exchange Interface" 
+                          className="w-full h-auto object-cover rounded-xl"
+                        />
+                    </div>
                 </div>
-            </div>
+            </a>
             
-            <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500">
-                {t.imageLabel}
-            </h3>
+            <a 
+              href="https://blesexchange.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:opacity-80 transition-opacity"
+            >
+                <h3 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500 cursor-pointer">
+                    {t.imageLabel}
+                </h3>
+            </a>
         </div>
 
       </div>

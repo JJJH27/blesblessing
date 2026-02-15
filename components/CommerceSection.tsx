@@ -22,19 +22,26 @@ const CommerceSection: React.FC<CommerceProps> = ({ t }) => {
 
             {/* Exchange Image Visualization */}
             <div className="max-w-4xl mx-auto transform hover:scale-[1.01] transition duration-500">
-                <div className="rounded-xl overflow-hidden shadow-2xl border border-white/10 relative group">
-                    {/* Fallback image that looks like a crypto exchange */}
-                    <img 
-                        src="./blesexchange.png" 
-                        alt="Blessing Exchange" 
-                        className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
-                    />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="bg-black/60 backdrop-blur-md px-8 py-4 rounded-lg border border-white/20">
-                            <span className="text-2xl font-bold text-white">Blessing Exchange</span>
+                <a 
+                  href="https://blesexchange.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                    <div className="rounded-xl overflow-hidden shadow-2xl border border-white/10 relative group">
+                        {/* Fallback image that looks like a crypto exchange */}
+                        <img 
+                            src="./blesexchange.png" 
+                            alt="Blessing Exchange" 
+                            className="w-full h-auto object-cover opacity-80 group-hover:opacity-100 transition duration-500"
+                        />
+                        <div className="absolute inset-0 flex items-center justify-center">
+                            <div className="bg-black/60 backdrop-blur-md px-8 py-4 rounded-lg border border-white/20 group-hover:bg-black/70 transition-colors">
+                                <span className="text-2xl font-bold text-white">Blessing Exchange</span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </div>
